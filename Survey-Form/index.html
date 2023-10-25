@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: rgb(178, 101, 229)">
+    <div>
+      <h2 style="display: flex; justify-content: center; color: white">
+        Customer Survey Form
+      </h2>
+      <div class="form-container">
+        <form>
+          <div id="surveyForm">
+            <div style="margin-top: 2rem">
+              <label for="FirstName">First Name:</label><br />
+              <input
+                type="text"
+                class="input_box"
+                id="firstName"
+                required
+              /><br />
+            </div>
+            <div style="margin-top: 2rem">
+              <label for="lastName">Last Name:</label><br />
+              <input
+                type="text"
+                class="input_box"
+                id="lastName"
+                required
+              /><br />
+            </div>
+
+            <div>
+              <label for="profession">Profession:</label><br />
+              <input
+                type="text"
+                class="input_box"
+                id="profession"
+                required
+              /><br />
+            </div>
+            <br />
+            <div>
+              <label for="email">Email:</label><br />
+              <input type="email" class="input_box" id="email" required /><br />
+            </div>
+
+            <div>
+              <label for="mobile">Mobile:</label><br />
+              <input type="tel" class="input_box" id="mobile" required /> <br />
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth:</label><br />
+              <input type="date" class="input_box" id="dob" required /><br />
+            </div>
+          </div>
+
+          <div class="radio_input">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" /> Male
+            <input type="radio" id="female" name="gender" value="Female" />
+            Female
+            <br /><br />
+            <label>Are you joining first time ??</label><br />
+            <input type="radio" name="firstTime" />Yes
+            <input type="radio" name="firstTime" />No<br /><br />
+            <label>Do you have a suggestion to improve our service:</label
+            ><br />
+            <input type="radio" name="suggestion" />Yes
+            <input type="radio" name="suggestion" />No<br /><br />
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+              <option disabled selected>Select</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+              <option value="INDIA">INDIA</option>
+            </select>
+            <br /><br />
+            <label for="suggestion"
+              >Do you have a suggestion to improve our service :</label
+            ><br /><br />
+            <textarea id="text_area"></textarea><br /><br />
+          </div>
+
+          <div class="button">
+            <button type="button" onclick="submitForm()"><b>Submit</b></button>
+            <button type="button" onclick="resetForm()"><b>Reset</b></button>
+          </div>
+        </form>
+      </div>
+
+      <div id="popup" class="popup">
+        <h2>Submitted Data</h2>
+        <div id="popup-content"></div>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

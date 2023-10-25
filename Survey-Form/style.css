@@ -1,0 +1,67 @@
+.form-container {
+  background-color: white;
+  height: 90vh;
+  width: 40%;
+  margin-left: 30%;
+  box-shadow: 2px 2px 3px 3px rgb(112, 110, 110);
+  border-radius: 4px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #ce93d6;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+#surveyForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#surveyForm > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-left: 4rem;
+}
+.input_box {
+  height: 20px;
+  width: auto;
+  border-radius: 2px;
+  box-shadow: 1px blue;
+}
+.input_box:hover {
+  scale: 1.1;
+}
+.radio_input {
+  margin: 2px 0 0 4rem;
+}
+.radio_input > label {
+  font-family: sans-serif;
+}
+.radio_input > input {
+  font-family: sans-serif;
+}
+#text_area {
+  height: 50px;
+  width: 70%;
+}
+.button {
+  display: flex;
+  font-size: large;
+}
+.button > button:hover {
+  scale: 1.1;
+}
+.button > button {
+  background-color: blueviolet;
+  margin-left: 4rem;
+  border-radius: 4px;
+  height: 3rem;
+  width: 5rem;
+}
